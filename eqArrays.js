@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Bad", "Good");
-assertEqual("Meg", "Meg"); 
+eqArrays = (array1, array2) => array1.join() === array2.join() ? true : false;
+
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 1, 3]), true); // => should Fail
