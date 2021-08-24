@@ -1,4 +1,4 @@
-const assertArraysEqual = require("../assertArrayEqual")
+const assertArraysEqual = require("../assertArraysEqual")
 
 assertArraysEqual([1,2,3], [1,2,3]); // should Pass
 assertArraysEqual([1,2,3], [3,2,1]); // should Fail

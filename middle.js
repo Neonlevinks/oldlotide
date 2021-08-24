@@ -1,6 +1,4 @@
-const eqArrays = (resultArray, solutionArray) => resultArray.join() === solutionArray.join() ? true : false; //ternary, if the string containing all the values in array1 matches the string containing all the values in array2, this function will return the boolean true
-
-const assertArraysEqual = (resultArray, solutionArray) => eqArrays(resultArray, solutionArray) ? console.log("✅✅✅ Assertion Passed, both arrays are equal") : console.log("🛑🛑🛑 Assertion Failed, the arrays are not equal");
+const assertArraysEqual = require("./assertArraysEqual")
 
 const middle = (inputArray) => {
   let resultArray = [];
@@ -18,8 +16,4 @@ const middle = (inputArray) => {
   return resultArray;
 };
 
-assertArraysEqual((middle([1, 2])), []);
-assertArraysEqual((middle([1, 2, 3])), [2]);
-assertArraysEqual((middle([1, 2, 3, 4, 5])), [3]);
-assertArraysEqual((middle([1, 2, 3, 4])), [2, 3]);
-assertArraysEqual((middle([1, 2, 3, 4, 5, 6])), [3, 4]);
+module.exports = middle;
