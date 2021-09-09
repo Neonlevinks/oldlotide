@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nelsonk94/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "My version of Lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Neonlevinks/lotide.git"
   },
-  "author": "",
+  "author": "Kevin Nelson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Neonlevinks/lotide/issues"

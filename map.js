@@ -20,3 +20,5 @@ const assertArraysEqual = (actual, expected) => eqArrays(actual, expected) ? con
 assertArraysEqual(results2, [6, 7, 2, 5, 3]) 
 assertArraysEqual(results3, ["ground David Bowie","control David Bowie","to David Bowie","major David Bowie","tom David Bowie"])
 assertArraysEqual(results4, ["ground starts with g,control starts with c,to starts with t,major starts with m,tom starts with t"])
+
+module.exports = map;
