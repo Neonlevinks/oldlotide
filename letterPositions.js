@@ -7,10 +7,13 @@ const letterPositions = function(sentence) {
   const results = {};
   for (const index in sentence) {
     let letter = sentence[index];
-    results[letter] ? results[letter].push(index) : results[letter] = [index];
+    let indexInt = parseInt(index);
+    results[letter] ? results[letter].push(indexInt) : results[letter] = [indexInt];
   }
   return results;
 };
+
+console.log(letterPositions("hello"));
 
 assertArraysEqual(letterPositions("hello").e, [1])
 
